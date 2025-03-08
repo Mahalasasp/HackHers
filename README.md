@@ -10,8 +10,7 @@ Women’s safety within residential spaces remains a critical concern, particula
 - **Audio Alert System:** Voice Recording Module (ISD1820) plays a pre-recorded alert message upon motion detection.
 - **Amplified Output:** Power Amplifier (PAM1804) ensures loud and clear alerts.
 - **Volume Control:** Users can adjust alert loudness using a potentiometer.
-- **Power Status Indicator:** LED indicator provides visibility on power status.
-- **Battery Backup:** Ensures uninterrupted operation in case of power outages.
+- **Mains Power LED Indicator**: Ensures visibility of power status for reliability.
 
 ## Tech Stack
 ### Hardware Components:
@@ -42,7 +41,6 @@ Women’s safety within residential spaces remains a critical concern, particula
 1. **Motion Detection:** When movement is detected, the PIR sensor triggers an alert.
 2. **Audio Alert Activation:** The ISD1820 voice module plays a pre-recorded message.
 3. **Amplification & Output:** The audio output is boosted and played through speakers.
-4. **Power Backup:** The system remains functional even during power failures.
 
 ## Contributors
 - Mahalasa S P
