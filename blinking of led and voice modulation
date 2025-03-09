@@ -1,0 +1,37 @@
+int calibrationTime = 30; // Fixed spelling error
+long unsigned int lowln;
+long unsigned int pause = 5000;
+int PIR_PIN = 2;  // The signal pin connected to the IR sensor's output
+int LED_PIN = 3;  // The signal pin connected to the first LED
+int ISD_PIN = 4;  // The signal pin connected to the second LED
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(PIR_PIN, INPUT); 
+    pinMode(LED_PIN, OUTPUT);
+    pinMode(ISD_PIN, OUTPUT);
+
+    digitalWrite(LED_PIN, HIGH);
+    digitalWrite(ISD_PIN, LOW);5                                                                                                                                                                                                                                                                                                                                                                                                    m            mn
+    
+    for(int i = 0; i < calibrationTime; i++){
+        digitalWrite(LED_PIN, HIGH);
+        delay(300);
+        digitalWrite(LED_PIN, LOW);
+        delay(700);
+    }
+    
+    digitalWrite(LED_PIN, LOW);
+    delay(50);
+}
+
+void loop() {
+    if (digitalRead(PIR_PIN) == HIGH) { // Fixed condition syntax
+        digitalWrite(LED_PIN, HIGH);
+        digitalWrite(ISD_PIN, HIGH);    
+        delay(200);
+        digitalWrite(ISD_PIN, LOW);
+        delay(4800);
+        digitalWrite(LED_PIN, LOW);
+    }   
+}
