@@ -42,6 +42,12 @@ Women’s safety within residential spaces remains a critical concern, particula
 2. **Audio Alert Activation:** The ISD1820 voice module plays a pre-recorded message.
 3. **Amplification & Output:** The audio output is boosted and played through speakers.
 
+##Images
+![image](https://github.com/user-attachments/assets/96621f54-20fd-421d-afe5-fb45b90538a4)
+![image](https://github.com/user-attachments/assets/e2f16588-3778-45c7-8841-3f229300f3fb)
+
+
+
 ## Contributors
 - Mahalasa S P
 - Vidhi D Kamat
